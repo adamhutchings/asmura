@@ -68,6 +68,7 @@ public class AFrame extends JFrame implements KeyListener {
 					// For the next loop around
 					event.startTime = this.game.time + 1;
 				} else {
+					event.end();
 					panel.events.remove(event);
 				}
 			}
