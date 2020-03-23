@@ -27,7 +27,7 @@ public class AFrame extends JFrame implements KeyListener {
 	
 	public Asmura game;
 	
-	private TextRenderer textRenderer;
+	public TextRenderer textRenderer;
 	
 	// Constructor (like __init__ in Python, roughly equal to C++)
 	public AFrame(Asmura game) {
