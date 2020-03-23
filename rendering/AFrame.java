@@ -8,6 +8,7 @@ import java.awt.event.WindowEvent;
 
 import javax.swing.JFrame;
 
+import events.ErrorMessageEvent;
 import events.LoopingEvent;
 import events.TimedEvent;
 import main.Asmura;
@@ -100,6 +101,8 @@ public class AFrame extends JFrame implements KeyListener {
 			} else if (this.state == "escaped") {
 				this.setStateMain();
 			}
+		} else if (key == KeyEvent.VK_E) {
+			new ErrorMessageEvent(this.game);
 		}
 	}
 	
