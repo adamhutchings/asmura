@@ -15,6 +15,7 @@ public abstract class TimedEvent {
 	public TimedEvent(int time, Asmura game) {
 		startTime = time;
 		this.game = game;
+		this.game.frame.panel.events.add(this);
 	}
 	
 	// Things that happen
