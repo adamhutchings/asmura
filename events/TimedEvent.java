@@ -3,7 +3,7 @@ package events;
 import main.Asmura;
 
 public abstract class TimedEvent {
-	
+
 	Asmura game;
 	
 	// How long, in frames, the event lasts
@@ -12,8 +12,9 @@ public abstract class TimedEvent {
 	// When the thing was started
 	public int startTime;
 	
-	public TimedEvent(int time) {
+	public TimedEvent(int time, Asmura game) {
 		startTime = time;
+		this.game = game;
 	}
 	
 	// Things that happen
