@@ -20,7 +20,7 @@ public class APanel extends JPanel {
 	ArrayList<Renderable> objects;
 	
 	// All events to be handled
-	ArrayList<TimedEvent> events;
+	public ArrayList<TimedEvent> events;
 	
 	public APanel() {
 		super();
