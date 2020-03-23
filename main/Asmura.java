@@ -10,11 +10,13 @@ public class Asmura {
 	
 	public int time;
 	
+	public AFrame frame;
+	
 	public Asmura() {
 		// The time since start
 		time = 0;
 		// Create an AFrame (window for the game)
-		AFrame frame = new AFrame(this);
+		frame = new AFrame(this);
 		// Repaint it forever
 		while (true) {
 			frame.repaint();
