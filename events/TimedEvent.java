@@ -26,5 +26,8 @@ public abstract class TimedEvent {
 	// At other stages of the event
 	// (time is frames since beginning time)
 	public abstract void frame(int time);
+	
+	// When the event ends
+	public abstract void end();
 
 }
