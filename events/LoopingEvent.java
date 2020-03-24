@@ -6,8 +6,8 @@ public abstract class LoopingEvent extends TimedEvent {
 	
 	// For events that start, run on their own, and then are restarted
 	
-	public LoopingEvent(int time, Asmura game) {
-		super(time, game);
+	public LoopingEvent(Asmura game) {
+		super(game);
 	}
 	
 	// Because these things have nothing to update every frame

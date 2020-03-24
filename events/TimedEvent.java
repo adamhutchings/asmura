@@ -12,10 +12,11 @@ public abstract class TimedEvent {
 	// When the thing was started
 	public int startTime;
 	
-	public TimedEvent(int time, Asmura game) {
-		startTime = time;
+	public TimedEvent(Asmura game) {
+		startTime = game.time;
 		this.game = game;
 		this.game.frame.panel.events.add(this);
+		this.commence();
 	}
 	
 	// Things that happen

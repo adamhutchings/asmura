@@ -60,9 +60,7 @@ public class AFrame extends JFrame implements KeyListener {
 			// If the event's timer has not run out, update it
 			// If the event is done, remove it from the list
 			// UNLESS the event is a LoopingEvent, in which case reset timer
-			if (event.startTime == this.game.time) {
-				event.commence();
-			} else if (event.startTime > this.game.time - event.getLength()) {
+			if (event.startTime > this.game.time - event.getLength()) {
 				event.frame(this.game.time - event.startTime);
 			} else {
 				if (event instanceof LoopingEvent) {
